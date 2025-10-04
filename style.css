@@ -2,10 +2,6 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  
-}
-body{
-   
 }
 /* Header */
 .header {
@@ -20,7 +16,6 @@ body{
   z-index: 1;
   color: white;
 }
-
 nav a {
   display: inline-block;
   margin: 0 20px;
@@ -35,9 +30,8 @@ nav a {
 nav a:hover {
   color: yellow;
   transition: 0.5s;
-  
 }
-
+/* Footer */
 footer {
   background-color: rgb(43, 174, 226);
   color: white;
