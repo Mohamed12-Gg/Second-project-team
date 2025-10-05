@@ -31,6 +31,23 @@ nav a:hover {
   color: yellow;
   transition: 0.5s;
 }
+/*main*/
+main h1,
+p {
+  margin: 3%;
+}
+main a {
+  margin-top: 0%;
+  padding: 1%;
+  color: black;
+  background-color: #ffd26b;
+  border-radius: 5px;
+}
+main a:link {
+  text-decoration: none;
+}
+
+
 /* Footer */
 footer {
   background-color: rgb(43, 174, 226);
@@ -39,3 +56,4 @@ footer {
   padding: 15px 0;
   width: 100%;
 }
+
