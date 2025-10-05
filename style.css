@@ -69,9 +69,14 @@ footer {
   background-color: rgb(43, 174, 226);
   color: white;
   text-align: center;
-  padding: 15px 0;
+  padding: 1px;
   width: 100%;
 }
+.footer p {
+  margin: 10px 0;
+}
+
+
 
 
 
