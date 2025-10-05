@@ -50,9 +50,8 @@ main {
   );
 }
 
-main h1,
-p {
-  margin: 3%;
+main h1,p {
+  margin:3%;
 }
 main a {
   margin-top: 0%;
@@ -61,6 +60,11 @@ main a {
   background-color: #ffd26b;
   border-radius: 5px;
   text-decoration: none;
+  transition: 0.5s;
+}
+main a:hover {
+  background-color: rgb(255, 255, 0);
+  transition: 0.5s;
 }
 
 
@@ -75,9 +79,3 @@ footer {
 .footer p {
   margin: 10px 0;
 }
-
-
-
-
-
-
