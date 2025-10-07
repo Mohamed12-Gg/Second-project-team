@@ -2,6 +2,12 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+body {
+  background-color: #f8f9fc;
+  color: #333;
+  line-height: 1.6;
 }
 /* Header */
 .header {
@@ -31,7 +37,9 @@ nav a:hover {
   color: yellow;
   transition: 0.5s;
 }
-/*main*/
+
+
+/*Main*/
 main {
   padding: 10% 5%;
   width: 100%;
@@ -66,13 +74,89 @@ main a:hover {
   background-color: rgb(255, 255, 0);
   transition: 0.5s;
 }
-.contact div,
-h2 {
+
+
+
+/* Services */
+.services {
+  text-align: center;
+  padding: 80px 20px;
+}
+
+.services h2 {
+  font-size: 2rem;
+  color: #0068a0;
+  font-weight: 600;
+  margin-bottom: 50px;
+}
+
+.service-container {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 25px;
+}
+
+.service-box {
+  background: #fff;
+  width: 270px;
+  padding: 25px;
+  border-radius: 10px;
+  box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.service-box:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 6px 15px rgba(0,0,0,0.15);
+}
+
+.service-box h3 {
+  color: #0068a0;
+  font-size: 1.1rem;
+  margin-bottom: 10px;
+}
+
+.service-box p {
+  font-size: 0.95rem;
+  color: #555;
+  line-height: 1.5;
+}
+
+
+
+/* About */
+.about {
+  background-color: #e9eef5;
+  text-align: center;
+  padding: 70px 20px;
+}
+
+.about h2 {
+  color: #0068a0;
+  font-size: 1.8rem;
+  margin-bottom: 20px;
+  font-weight: 600;
+}
+
+.about p {
+  max-width: 700px;
+  margin: 0 auto;
+  font-size: 1rem;
+  color: #444;
+  line-height: 1.7;
+}
+
+
+
+/* Contact */
+.contact div,h2 {
   margin: 1%;
   padding: 1%;
 }
 .contact h2 {
   color: #0068a0;
+  text-align: center;
 }
 .icons {
   display: flex;
@@ -96,9 +180,12 @@ h2 {
   transition: 0.5s;
 }
 
+
+
+
 /* Footer */
 footer {
-  background-color: rgb(43, 174, 226);
+  background-color: #0068a0;
   color: white;
   text-align: center;
   padding: 1px;
@@ -108,3 +195,23 @@ footer {
   margin: 10px 0;
 }
 
+
+/* Responsive  */
+@media (max-width: 768px) {
+  .service-container {
+    flex-direction: column;
+    align-items: center;
+  }
+  .icons {
+    flex-direction: column;
+    align-items: center;
+  }
+  .icon {
+    margin: 10px 0;
+  }
+  nav a {
+    margin: 0 10px;
+    font-size: 18px;
+    padding: 8px 12px;
+  }
+}
